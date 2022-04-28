@@ -5,8 +5,8 @@ import hello.hellospring.domain.Member;
 import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository{
-    private static long sequence = 0L; //id
     private static Map<Long, Member> store = new HashMap<>(); //멤버들을 저장할 저장소
+    private static long sequence = 0L; //id
     //실무에서는 동시성 문제 고려해야하므로 HashMap, long 쓰면 안됨
 
 
