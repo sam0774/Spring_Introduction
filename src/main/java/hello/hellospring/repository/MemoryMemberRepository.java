@@ -30,7 +30,7 @@ public class MemoryMemberRepository implements MemberRepository{
                 .filter(member->member.getName().equals(name)) //멤버이름과 파라미터로 넘어온 문자열이 같아야 filter를 통과함
                 .findAny(); //하나라도 찾으면 Optional로 반환. 없으면 Optional에 null 포함해서 반환
     }
-    //valuse메소드: 해당 Map의 모든 value를 모아서 Collection형태로 반환
+    //valuse메소드: 해당 Mapf의 모든 value를 모아서 Collection형태로 반환
 
     @Override
     public List<Member> findAll() {
